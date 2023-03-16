@@ -1,0 +1,5 @@
+<resources>
+   <string name="app_name">BIM Kalculator</string>
+   <string name="weight">Wpisz wage</string>
+   <string name="growth">Wpisz wzrost</string>
+</resources>
