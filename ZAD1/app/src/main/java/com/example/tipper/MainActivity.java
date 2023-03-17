@@ -3,8 +3,8 @@ package com.example.tipper;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText; //
-import android.widget.TextView; //
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Button;
 
 
@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
         Button button = findViewById(R.id.button);
 
         button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
+            @Override
+            public void onClick(View view) {
                 calculate();
             }
 
@@ -36,13 +37,11 @@ public class MainActivity extends AppCompatActivity {
     private void calculate() {
 
         float weight =  Float.parseFloat(weightEdit.getText().toString());
-        float growth = Float.parseFloat(growthEdit.getText().toString()) / 100;
-        float bmi = growth/(weight*weight);
+        float growth = Float.parseFloat(growthEdit.getText().toString());
+        float bmi = (100*100*weight)/(growth*growth);
         String calculatedBmi = String.format("%.2f", bmi);
-        bmiTextView.setText(calculatedBmi);
-
+        bmiTextView.setText("Twoje BMI: " + calculatedBmi);
     }
-
 
 }
 

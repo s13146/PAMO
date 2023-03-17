@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="120dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="120dp"
         android:layout_marginBottom="0dp"
         android:text="Podaj dane"
@@ -32,8 +32,7 @@
         android:background="@color/amount_background"
         android:elevation="@dimen/elevation"
         android:text="@string/weight"
-        android:textColor="#005AFF
-"
+        android:textColor="#005AFF"
         android:padding="5dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -43,11 +42,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="120dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="80dp"
         android:digits="0123456789"
         android:ems="3"
+        android:hint="kg"
         android:inputType="number"
         android:maxLength="10"
          />
@@ -56,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="180dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="120dp"
         android:background="@color/amount_background"
@@ -74,14 +74,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="220dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="80dp"
         android:digits="0123456789"
         android:ems="3"
         android:inputType="number"
+        android:hint="cm"
         android:maxLength="10"
-        android:padding="20dp" />
+       />
 
 
 
@@ -93,7 +94,7 @@
         android:layout_height="wrap_content"
         android:text="Oblicz"
         android:layout_marginStart="150dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="300dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="100dp"
         android:layout_gravity="center"
@@ -103,11 +104,17 @@
         android:id="@+id/bmiTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="380dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="100dp"
-        android:text="BMI:" />
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="64px"
+        android:textColor="#005AFF"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
 
 
 </RelativeLayout>
