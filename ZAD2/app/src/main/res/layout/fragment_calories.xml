@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaloriesFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40px"
+        android:layout_marginTop="40px"
+        android:textColor="#893D4F"
+        android:text="@string/calories_blank_fragment"
+        android:textAlignment="center"
+        android:textSize="48px" />
+
+    <TextView
+        android:id="@+id/totalLabelTextView"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180px"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="120dp"
+        android:textAlignment="textStart"
+        android:text="@string/input_data"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/weightTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/amount_background"
+        android:elevation="@dimen/elevation"
+        android:padding="5dp"
+        android:text="@string/weight"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#651FFF" />
+
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="80dp"
+        android:digits="0123456789"
+        android:ems="3"
+        android:hint="kg"
+        android:inputType="number"
+        android:maxLength="10"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/growthTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="120dp"
+        android:background="@color/amount_background"
+        android:elevation="@dimen/elevation"
+        android:padding="5dp"
+        android:text="@string/growth"
+        android:textAlignment="textStart"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#651FFF" />
+
+
+    <EditText
+        android:id="@+id/growthEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="80dp"
+        android:digits="0123456789"
+        android:ems="3"
+        android:hint="cm"
+        android:inputType="number"
+        android:maxLength="10"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="120dp"
+        android:background="@color/amount_background"
+        android:elevation="@dimen/elevation"
+        android:padding="5dp"
+        android:text="@string/age"
+        android:textAlignment="textStart"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#651FFF" />
+
+
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="80dp"
+        android:digits="0123456789"
+        android:ems="3"
+        android:hint="wiek"
+        android:inputType="number"
+        android:maxLength="10"
+        android:minHeight="48dp" />
+
+    <RadioGroup
+        android:id="@+id/sexRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="390dp">
+
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_marginLeft="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/male"
+            android:textAlignment="center"/>
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_marginLeft="50px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="410px"
+        android:text="@string/calculate_ppm"
+        android:background="#893D4F"
+        android:padding="30px"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/ppmTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="80dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#893D4F"
+
+        android:textSize="72px"
+        android:textStyle="bold" />
+
+</FrameLayout>
