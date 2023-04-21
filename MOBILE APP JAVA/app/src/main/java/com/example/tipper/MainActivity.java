@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
     RecipeFragment recipeFragment = new RecipeFragment();
     CaloriesFragment caloriesFragment = new CaloriesFragment();
     CalculateFragment calculateFragment = new CalculateFragment();
+    QuizFragment quizFragment = new QuizFragment();
+
+    GraphFragment graphFragment = new GraphFragment();
+
     private EditText weightEdit;
     private EditText growthEdit;
     private TextView bmiTextView;
@@ -53,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.recipe_card:
                         getSupportFragmentManager().beginTransaction().replace(R.id.container, recipeFragment).commit();
                         return true;
+                    case R.id.quiz_card:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container, quizFragment).commit();
+                        return true;
+
                 }
                 return false;
             }

@@ -16,4 +16,10 @@
     <item android:id="@+id/recipe_card"
         android:title="Przepisy"
         android:icon="@drawable/baseline_food_bank_24"/>
+
+    <item android:id="@+id/quiz_card"
+        android:title="Quiz"
+        android:icon="@drawable/baseline_food_bank_24"/>
+
+
 </menu>

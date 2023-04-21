@@ -29,7 +29,6 @@ public class CalculateFragment extends Fragment {
         View root = binding.getRoot();
 
         weightEdit = root.findViewById(R.id.weightEditText);
-
         weightEdit = root.findViewById(R.id.weightEditText);
         growthEdit = root.findViewById(R.id.growthEditText);
         bmiTextView = root.findViewById(R.id.bmiTextView);
